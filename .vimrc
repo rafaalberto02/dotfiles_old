@@ -27,8 +27,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
-Plug 'terroo/vim-simple-emoji'
-Plug 'ycm-core/YouCompleteMe'
 ": Always have the devicons in the last place PLS
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -46,7 +44,6 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
-let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 
 augroup javascript_folding
     au!
@@ -55,9 +52,6 @@ augroup END
 
 let g:airline_powerline_fonts=1
 let g:dracula_colorterm = 0
-
-let g:tagbar_ctags_bin='/opt/homebrew/Cellar/ctags/5.8_2/bin/ctags'
-
 
 colorscheme dracula
 set tags=tags
