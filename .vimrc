@@ -3,7 +3,6 @@ set mouse=a
 set title
 set cursorline
 set encoding=utf8
-set relativenumber
 
 call plug#begin()
 
@@ -54,4 +53,4 @@ let g:airline_powerline_fonts=1
 let g:dracula_colorterm = 0
 
 colorscheme dracula
-set tags=tags
+
