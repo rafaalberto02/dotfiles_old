@@ -18,3 +18,5 @@ alias ctags=/opt/homebrew/bin/ctags
 alias vim=/opt/homebrew/bin/vim
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
