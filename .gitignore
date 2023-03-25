@@ -1,0 +1,10 @@
+*
+!.gitignore
+!.config/kitty/*
+!.vimrc
+!.zshrc
+!.gitconfig
+!Brewfile
+!Readme.md
+Stefanini/**
+!Stefanini/.gitconfig
