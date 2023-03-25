@@ -4,15 +4,18 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  
 
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
-plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-)
+# plugins=(
+# 	git
+# 	zsh-autosuggestions
+# 	zsh-syntax-highlighting
+# )
 
 source $ZSH/oh-my-zsh.sh
+source "$HOMEBREW_PREFIX/opt/spaceship/spaceship.zsh"
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ctags=/opt/homebrew/bin/ctags
 alias vim=/opt/homebrew/bin/vim
@@ -26,7 +29,3 @@ eval "$(pyenv init -)"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
