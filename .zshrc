@@ -4,14 +4,6 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  
 
-# ZSH_THEME="spaceship"
-
-# plugins=(
-# 	git
-# 	zsh-autosuggestions
-# 	zsh-syntax-highlighting
-# )
-
 source $ZSH/oh-my-zsh.sh
 source "$HOMEBREW_PREFIX/opt/spaceship/spaceship.zsh"
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh

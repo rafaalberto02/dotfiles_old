@@ -3,6 +3,7 @@ set mouse=a
 set title
 set cursorline
 set encoding=utf8
+set termguicolors
 
 call plug#begin()
 
@@ -17,7 +18,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 Plug 'fladson/vim-kitty'
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -52,5 +54,6 @@ augroup END
 let g:airline_powerline_fonts=1
 let g:dracula_colorterm = 0
 
-colorscheme dracula
+"colorscheme dracula
+colorscheme catppuccin_mocha
 

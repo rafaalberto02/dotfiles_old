@@ -13,6 +13,12 @@ brew bundle install
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+### Install vim-plug
+
+```
+curl -fLo '~/.vim/autoload/plug.vim' --create-dirs 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 ## After
 ### Openjdk Install
 ```
