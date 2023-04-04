@@ -33,5 +33,19 @@ echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"' >> ~/.zshrc
 ```
 
-
-
+### Spicetify Config
+```
+spicetify config
+spicetify backup apply
+spicetify update
+cd ~/Downloads
+git clone https://github.com/catppuccin/spicetify.git
+cd spicetify
+cp -r catppuccin-* ~/.config/spicetify/Themes/\ncp 
+cp js/* ~/.config/spicetify/Extensions/
+spicetify update
+spicetify apply
+spicetify config current_theme catppuccin-mocha\nspicetify config color_scheme lavender\nspicetify config inject_css 1 replace_colors 1 overwrite_assets 1\nspicetify config extensions catppuccin-mocha.js
+spicetify update
+spicetify apply
+```
