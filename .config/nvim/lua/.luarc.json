@@ -1,0 +1,27 @@
+{
+    "workspace.library": [
+        "/Users/rahenriques/.config/nvim",
+        "/Users/rahenriques/.local/share/nvim/site",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/catppuccin",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/LuaSnip",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/mason.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/omnisharp-extended-lsp.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/undotree",
+        "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime",
+        "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/pack/dist/opt/matchit",
+        "/opt/homebrew/Cellar/neovim/0.9.1/lib/nvim",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/catppuccin/after",
+        "/Users/rahenriques/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after",
+        "/Users/rahenriques/.config/nvim/after",
+        "${3rd}/luassert/library"
+    ]
+}
