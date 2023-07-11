@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.config/kitty/*
+!.config/nvim/*
 !.vimrc
 !.zshrc
 !.gitconfig
