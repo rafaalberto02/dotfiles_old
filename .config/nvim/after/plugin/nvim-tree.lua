@@ -8,7 +8,6 @@ vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, nor
 
 local function my_on_attach(bufnr)
     local api = require "nvim-tree.api"
-    
     api.config.mappings.default_on_attach(bufnr)
 
     local tree_actions = {
@@ -94,6 +93,54 @@ end
 require("nvim-tree").setup {
     ---
     on_attach = my_on_attach,
+    renderer = {
+        indent_markers = {
+            enable = true,
+            icons = {
+                corner = "└ ",
+                edge = "│ ",
+                item = "│ ",
+                none = "  ",
+            },
+        },
+        icons = {
+            webdev_colors = true,
+            show = {
+                file = true,
+                folder = true,
+                folder_arrow = true,
+                git = true
+            },
+            glyphs = {
+                default = "",
+                symlink = "",
+                folder = {
+                    arrow_closed = "",
+                    arrow_open = "",
+                    default = "",
+                    open = "",
+                    empty = "",
+                    empty_open = "",
+                    symlink = "",
+                    symlink_open = "",
+                },
+                git = {
+                    unstaged = "", -- 
+                    staged = "",
+                    unmerged = "",
+                    renamed = "➜",
+                    untracked = "",
+                    deleted = "",
+                    ignored = "◌",
+                },
+            },
+        },
+    },
+    update_focused_file = {
+        enable = true,
+        update_root = true,
+        ignore_list = {},
+    },
     ---
 }
 
