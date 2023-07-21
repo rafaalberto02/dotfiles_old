@@ -1,3 +1,11 @@
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 export PATH=/opt/homebrew/opt/make/libexec/gnubin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
@@ -25,3 +33,5 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
