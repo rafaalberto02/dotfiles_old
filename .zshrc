@@ -35,3 +35,5 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 source <(ng completion script)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
